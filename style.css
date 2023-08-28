@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header-blue{
+    background-color: #1E3A8A;
+    padding: .5rem;
+    color: white;
+    font-weight: 800;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+@media (max-width:767px) {
+    .header-blue{
+        padding: 0.6em;
+    }   
+}
+
+.container{
+    width: 48rem;
+    margin: auto;
+    text-align: center;
+}
+.container h1{
+   font-size: 30px;
+   font-weight: 900;
+   margin-top: 1rem;
+}
+.container .photo img{
+    width: 80%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.container .text-normal{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: left;
+}
+.container .text-bold{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+@media (max-width:767px) {
+    .container{
+        width: 95%;
+        padding:0% 2% ;
+    }
+    .container h1{
+        font-size: 20px;
+        margin-top: 0.2rem;
+    }
+    .container .photo img{
+        width: 100%;
+    }
+    .container .text-normal{
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+    .container .text-bold{
+        font-size: 16px;
+        line-height: 1.5rem;
+        text-align: justify;
+    }   
+}
+
+h3{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 4%;
+}
+.box{
+    width: 100%;   
+    
+}
+.box1{
+    font-weight: bolder;
+    background-color: #1D4ED8;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3%;
+    text-align: center;
+    padding: 3% 0%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: background-color 0.3s ease;
+
+}
+.box1 a{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+.box1:hover{
+    background-color: #0056b3;
+}
+@media (max-width:767px) {
+    h3{
+        font-size: 24px;
+    }
+    .box1{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 80%;
+        border-radius: 20px;
+    }
+    .box1 a{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.footer{
+    padding-top: 5%;
+}
+.policy{
+    color:     #1D4ED8;
+    margin-bottom: 6%;
+    font-size: 14px;
+
+}
+.policy a{
+    text-decoration: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    color:     #1D4ED8;
+}
+.policy a:hover{
+    text-decoration: underline;
+}
+.copyright p{
+    font-size: 14px;
+    color: #1f2937;
+}
+
+.testimonial {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .testimonial img{
+    width: 20%;
+  }
+  @media (max-width:767px) {
+    .testimonial img{
+        width: 40%;
+      }
+  }

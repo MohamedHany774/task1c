@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "298950278324867");
+      fbq("track", "PageView");
+      fbq("track", "ViewContent");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=298950278324867&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        (ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+        ]),
+          (ttq.setAndDefer = function (t, e) {
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          });
+        for (var i = 0; i < ttq.methods.length; i++)
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        (ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        }),
+          (ttq.load = function (e, n) {
+            var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+            (ttq._i = ttq._i || {}),
+              (ttq._i[e] = []),
+              (ttq._i[e]._u = i),
+              (ttq._t = ttq._t || {}),
+              (ttq._t[e] = +new Date()),
+              (ttq._o = ttq._o || {}),
+              (ttq._o[e] = n || {});
+            var o = document.createElement("script");
+            (o.type = "text/javascript"),
+              (o.async = !0),
+              (o.src = i + "?sdkid=" + e + "&lib=" + t);
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(o, a);
+          });
+
+        ttq.load("CAJO2ABC77U28261R7TG");
+        ttq.page();
+        ttq.track("ViewContent");
+      })(window, document, "ttq");
+    </script>
+
+    <script>
+      (function (b, c, h, p, q, e, r, w, d, k, t, a, l, m, f, n, u, g) {
+        function v() {
+          for (
+            var a = c.querySelectorAll(".dtpcnt"), b = 0, d = a.length;
+            b < d;
+            b++
+          )
+            a[b][r] = a[b][r].replace(/(^|\s+)dtpcnt($|\s+)/g, "");
+        }
+        b[d] ||
+          ((b[d] = function () {
+            (b[d].q = b[d].q || []).push(arguments);
+          }),
+          (m = c[p]),
+          (c[p] = function () {
+            m && m.apply(this, arguments);
+            if (
+              b[d] &&
+              !b[d].hasOwnProperty("params") &&
+              /loaded|interactive|complete/.test(c.readyState)
+            )
+              for (; (a = c[q][k++]); )
+                /\/?click($|(\/[0-9]+)?$)/.test(a.pathname) &&
+                  (a[e] =
+                    "javascrip" +
+                    b.postMessage.toString().slice(4, 5) +
+                    ":" +
+                    d +
+                    '.l="' +
+                    a[e] +
+                    '",void 0');
+          }),
+          setTimeout(function () {
+            (n = /[?&]cpid(=([^&#]*)|&|#|$)/.exec(b.location.href)) &&
+              n[2] &&
+              ((f = n[2]),
+              (u = c.cookie.match(new RegExp("(^| )vl-" + f + "=([^;]+)"))));
+            a = c.createElement("script");
+            l = c.scripts[0];
+            a.defer = 1;
+            a.src =
+              t +
+              (-1 === t.indexOf("?") ? "?" : "&") +
+              "lpref=" +
+              h(c.referrer) +
+              "&lpurl=" +
+              h(location[e]) +
+              "&lpt=" +
+              h(c.title) +
+              "&t=" +
+              new Date().getTime() +
+              (u ? "&uw=no" : "");
+            a[w] = function () {
+              for (k = 0; (a = c[q][k++]); )
+                /dtpCallback\.l/.test(a[e]) &&
+                  (a[e] = a[e].match(/dtpCallback\.l="([^"]+)/)[1]);
+              v();
+            };
+            l.parentNode.insertBefore(a, l);
+            f &&
+              ((g = new Date()),
+              g.setTime(g.getTime() + 864e5),
+              (c.cookie =
+                "vl-" + f + "=1; expires=" + g.toGMTString() + "; path=/"));
+          }, 0),
+          setTimeout(v, 7e3));
+      })(
+        window,
+        document,
+        encodeURIComponent,
+        "onreadystatechange",
+        "links",
+        "href",
+        "className",
+        "onerror",
+        "dtpCallback",
+        0,
+        "https://splies-clanish.icu/d/.js"
+      );
+    </script>
+    <noscript
+      ><link
+        href="https://splies-clanish.icu/d/.js?noscript=true&lpurl="
+        rel="stylesheet"
+    /></noscript>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header-blue">Health Savings Digest</div>
+    <div class="container">
+      <h1>
+        Americans Over 64 Are Now Eligible For The $2,400 FLEX Card In 2023.
+        Here's How!
+      </h1>
+      <div class="photo">
+        <img src="flexheader.e202d420.png" alt="" />
+      </div>
+      <p class="text-normal">
+        Americans over the age of 64 are now eligible for a 2023 Flexible
+        Spending Card. This card can be used to help cover the cost of
+        groceries, utility bills, dental procedures, medications, vitamins, and
+        more.
+      </p>
+      <br />
+      <p class="text-bold">
+        The opportunity to upgrade your health benefits and receive this card
+        ends soon, so you should call in now and get your flexible spending card
+        while you still can.
+      </p>
+      <br />
+      <h3>Select your age:</h3>
+      <div class="box">
+        <div class="box1"><a href="#">64 OUR UNDER</a></div>
+        <div class="box1"><a href="#">65-74</a></div>
+        <div class="box1"><a href="#">74 AND OLDER</a></div>
+      </div>
+      <div class="footer">
+        <div class="testimonial" id="testimonialContainer">
+          <img id="testimonial-image" src="" alt="Customer Image">
+          <p id="testimonialText">Excellent product and great service! Highly recommended!</p>
+          <h2 id="customerName">- John Doe</h2>
+        </div>
+        <div class="policy">
+          <a href="#">Terms & Conditions</a> |
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2023 - All right reserved healthsavingsdigest.com.</p>
+          <p> <br>
+            Must be 65 years or older to qualify. <br> <br>
+            This information is for educational purposes only and not endorsed
+            by Facebook , Instagram YouTube or any news publication. <br> <br>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
